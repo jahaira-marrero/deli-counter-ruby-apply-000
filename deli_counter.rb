@@ -9,10 +9,13 @@ katz_deli = []
 #   katz_deli << name
 #   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 # end
+ counter = 0 
  def take_a_number(katz_deli)
-   counter = 0 
-   katz_deli << 
-   puts "You are number #{katz_deli.len
+   
+   counter += 1
+   katz_deli << counter
+   puts "You are number #{counter}."
+ 
  end
  
  # define who is being served but if there's no one in line it will say that there's no one in line. If there is someone in line then it should say who is being served while removing it.
