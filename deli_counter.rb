@@ -1,13 +1,17 @@
 # define the names of the customers and an empty line
 
-name = ["Ada", "Grace", "Kent"]
+#name = ["Ada", "Grace", "Kent"]
 katz_deli = []
 
 # define take a number to add the names of the new customers to the empty line and return with a welcome message along with their spot in line.
 
-def take_a_number(katz_deli, name)
-   katz_deli << name
-   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+# def take_a_number(katz_deli, name)
+#   katz_deli << name
+#   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+# end
+ def take_a_number(katz_deli)
+   katz_deli << 
+   puts "You are number #{katz_deli.length"
  end
  
  # define who is being served but if there's no one in line it will say that there's no one in line. If there is someone in line then it should say who is being served while removing it.
@@ -28,7 +32,7 @@ def take_a_number(katz_deli, name)
      katz_deli.each_with_index do |value, index|
        message += " #{index.to_i+1}. #{value}"
      end
-     puts "#{message}"
+     puts message
    end
  end
  
